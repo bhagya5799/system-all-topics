@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .table{
+            border: 0;
+            line-height: 1.5;
+            padding: 0 10px;
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: blue;
+            background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+            box-shadow: inset2px 2px 3px rgb(225,225,225,0);
+        }
+        legend{
+            background-color:#000;
+            color: #fff;
+            padding: 2px 
+            2px;
+        }
+        .output{
+            font: 1rem ;
+        }
+        input{
+            margin: 2rem;
+        }
+        form.for-example{
+            display: table;
+
+        }
+        div.for-example{
+            display: table-row;
+        }
+
+        /* label,input{
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+        label,input{
+            padding-right: 10px;
+
+        }
+         */
+
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="p1.jpeg"  height="100%"   width="100px" alt="image"></td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ex accusamus vitae quos magni! Iusto, incidunt expedita! Harum ipsum ea unde reprehenderit incidunt sit hic, saepe nam qui. Incidunt, odio.</td>
+            <td>😇  😇 😇 😇 😇 😇 😇 😇 😇 😇 </td>
+            <!-- <button type="button"  > press me</button> -->
+        </tr>
+    </table>
+    
+    <button class="table" type="button">Click Here</button>
+    
+    <div class="p1">
+
+    </div>
+    <label for="ice-cream-choice">Choose a flavor:</label>
+<!-- <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" /> -->
+    <input list="ice-cream-flavors" name="ice -cream choice">
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+
+
+
+<label for="choose dress">select dress model </label>
+<input list="select-type -dress" name="choose one">
+
+<datalist id="select-type -dress">
+    <option value="modern dress"></option>
+    <option value="jeans dress"></option>
+    <option value="chudidar"></option>
+</datalist>
+
+<label for="myBrowser"> choose browser from list</label>
+<input list="browser" id="myBrowser" name="browser">
+<datalist id="browser" >
+    <option value="chrome"></option>
+    <option value="google"></option>
+    <option value="firefox"></option>
+    <option value="intnet explore"></option>
+    <option value="opera"></option>
+    <option value="safari"></option>
+    <option value="microsoft edge"></option>
+</datalist><br>
+<br>
+
+<form >
+     <fieldset>
+        <legend>choose you want moonstor</legend>
+
+        <input type="radio" id="bhagya" name="moonstoor">
+        <label for="bhagya">bhagya</label>
+
+        <input type="radio" id="vinni" name="moonstor">
+        <label for="viini">vinni</label>
+
+
+        <input type="radio" id="junni" name="monstoor">
+        <label for="junni">junni</label>
+
+
+    </fieldset> 
+    
+</form>
+
+<form  action="#">
+    <fieldset disabled>
+        <legend>choose one</legend>
+
+        <div class="for-example">
+        <label for="dress">name</label>  
+        <input type="text" id="dress" value="write">
+        </div>
+
+        <div class="for-example">
+            <label for="dress"> age</label>
+            <input type="nbr" id="dress" value="write">
+        </div>
+    </fieldset>
+
+    <form action="" method="get" class="for-example">
+        <div class="for-example">
+            <label for="name"> Enater Your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="for-example">
+                <label for="email">enter your mail:</label>
+                <input type="text" id="mail" name="mail" required>
+
+            </div>
+            <div class="for-example">
+                <input type="submit" value="subscribe">
+
+            </div>
+        </div>
+
+
+    </form>
+
+
+
+
+</form>
+<video controls width="250">
+
+    <source src="flower (1).webm"
+            type="video/webm">
+
+    <!-- <source src="flower (1).webm"
+            type="video/mp4"> -->
+
+    
+</video>
+<video controls width="270">
+    <a href="01. Perdesi Perdesi.mp3"></a>
+    <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="01. Perdesi Perdesi.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+    
+
+</video>
+
+
+
+
+    
+</body>
+
+    
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <style>
+           #res{
+               color: blue;
+               font-size: 30px;
+           }
+       </style>
+
+
+    <script>
+        function relation()
+        {
+            if (document.getElementById("t1").value==document.getElementById("t2").value)
+            {
+                document.getElementById("res").innerHTML="BOTH ARE SAME";
+            }
+            else if (document.getElementById("t1").value>document.getElementById("t2").value)
+            {
+                document.getElementById("res").innerHTML="fist nbr grateer then second nbr";
+            }
+            else{
+                document.getElementById("res").innerHTML="fst number less then second number"
+            }
+        }
+    </script>
+   </head>
+    <body>
+        <h1>Enter the first number: <input type="number" id="t1"><br></h1>
+        <h1>Enter the  second number: <input type="number" id="t1"><br></h1>
+
+        <button type="button" onclick="relation()">RELATIN TWO NUMBERS</button><br><br>
+        <div id="res"></div>
+    </body>
+</html>
